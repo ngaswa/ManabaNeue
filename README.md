@@ -19,4 +19,5 @@ Manaba用の便利ツールみたいな拡張機能です。いろいろテキ�
 
 - Windows 10, Google Chrome 84
 - Windows 10, Microsoft Edge 84
+- Windows 10, Mozilla Firefox 79
 - macOS Catalina, Google Chrome 84
