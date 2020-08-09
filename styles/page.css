@@ -1,0 +1,83 @@
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+/*          CONTENTS          */
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+.contents > .contents {
+  width: 1280px;
+  margin: 32px auto;
+}
+
+.contents-icon img {
+  float: left;
+  margin-right: 16px;
+  width: 64px;
+  height: 64px;
+}
+
+.articlebody {
+  display: grid;
+  grid-template-columns: 800px auto;
+  gap: 32px;
+}
+
+.pagetitle {
+  font-size: 1.5rem;
+}
+
+.contents-modtime,
+.pagelimitview {
+  font-size: 0.875rem;
+}
+
+.pagelimitview {
+  order: -1;
+}
+
+.contentsheader {
+  margin-bottom: 16px;
+}
+
+.contentbody-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentbody-right {
+  margin-bottom: auto;
+  position: sticky;
+  top: 72px;
+}
+
+.contentsheader,
+.contentbody-left,
+.contentbody-right {
+  padding: 16px;
+  box-shadow: 0 4px 8px var(--c-shadow);
+  background-color: var(--c-back);
+  border-radius: 16px;
+}
+
+.articleauthor {
+  border-top: 1px solid var(--c-border);
+  display: flex;
+  justify-content: space-between;
+}
+
+.articletext {
+  margin-bottom: 8px;
+}
+
+.topagetop img {
+  display: none;
+}
+
+.topagetop::before {
+  content: 'トップへ戻る';
+}
+
+.current {
+  font-weight: 700;
+}
+
+#pagecomform {
+  display: none;
+}

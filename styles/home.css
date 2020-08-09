@@ -1,0 +1,275 @@
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+/*            BODY            */
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+.my-course {
+  display: grid;
+  grid-template-columns: 800px 480px;
+  grid-template-rows: auto 1fr;
+  column-gap: 32px;
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.articlebody {
+  width: 720px;
+  margin: 32px auto;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--c-back);
+  box-shadow: 0 4px 8px var(--c-shadow);
+}
+
+.alertlist {
+  border-radius: 16px;
+  margin-bottom: 32px;
+  padding: 16px;
+  grid-column: 2;
+  grid-row: 1;
+  background-color: var(--c-back);
+  box-shadow: 0 4px 8px var(--c-shadow);
+}
+
+.alertlist::before {
+  content: 'おしらせ';
+  color: var(--c-text-sub);
+  font-weight: 400;
+}
+
+.my-infolist {
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 32px;
+  background-color: var(--c-back);
+  box-shadow: 0 4px 8px var(--c-shadow);
+}
+
+.my-infolist .my-infolist {
+  padding: 0;
+  box-shadow: none;
+}
+
+.my-infolist-header h2,
+.tips-list h3,
+.course-type {
+  color: var(--c-text-sub);
+  font-weight: 400;
+}
+
+.my-infolist-body table {
+  width: 100%;
+}
+
+.collist-courseinfo {
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.collyear-open {
+  color: var(--c-primary);
+  cursor: pointer;
+}
+
+#gradesubmitconfirm,
+#gradeeditconfirm {
+  display: none;
+}
+
+.reporttext-title {
+  font-weight: 700;
+}
+
+.collectioninfo,
+.reporttext-body,
+.report-submit-list {
+  margin-bottom: 16px;
+}
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+/*         BODY-LEFT          */
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+.contentbody-left {
+  display: contents;
+}
+
+.my-infolist-centernews {
+  grid-column: 2;
+}
+
+.my-infolist-mycourses {
+  grid-row: 1 / 5;
+}
+
+.news-title {
+  display: flex;
+}
+
+.news-title img {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.showmore {
+  display: inline-block;
+}
+
+.infolist-tab {
+  display: inline-flex;
+}
+
+.infolist-tab a {
+  height: 40px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.current {
+  border-bottom: 2px solid var(--c-primary);
+}
+
+.course {
+  width: 128px;
+  vertical-align: top;
+}
+
+.period {
+  border-bottom: 1px solid var(--c-border);
+  color: var(--c-text-sub);
+  text-align: center;
+}
+
+.courselistweekly-c {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.courselistweekly-c > :first-child {
+  display: block;
+  width: 100%;
+  color: var(--c-text);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.courseweekly-fav {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+.courseweekly-fav img {
+  vertical-align: top;
+}
+
+.coursestatus {
+  display: flex;
+  height: 15px;
+}
+
+.courselist-c:first-child {
+  display: flex;
+}
+
+.courselist-c td {
+  padding: 8px;
+}
+
+.course-card-status {
+  display: flex;
+  height: 15px;
+}
+
+.collist-year {
+  position: relative;
+  border-bottom: 1px solid var(--c-border);
+  position: sticky;
+  top: 56px;
+  background-color: var(--c-back);
+  padding-top: 8px;
+}
+
+.collyear-open {
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+
+.coursecard {
+  width: 360px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 24px;
+  margin-right: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--c-border);
+}
+
+.coursecard > div {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 8px;
+}
+
+.course-card-img img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+
+.course-card-fav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.course-card-fav a {
+  height: 16px;
+}
+
+.course-card-fav img {
+  vertical-align: top;
+}
+
+.coursecode {
+  color: var(--c-text-sub);
+  line-height: 1;
+}
+
+.courseitems {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 8px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 0.875rem;
+}
+
+.courseitemdetail {
+  margin-inline-start: 0;
+}
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+/*         BODY-RIGHT         */
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+.tips-list li > img {
+  float: left;
+}
+
+.eventlist-day {
+  display: block;
+}
+
+.event-title {
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 16px;
+}
+
+.event-title a:last-child {
+  grid-column: 2;
+}

@@ -1,0 +1,313 @@
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+/*          CONTENTS          */
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+.groupnews_frame {
+  width: 720px;
+  margin: 16px auto;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--c-back);
+  box-shadow: 0 4px 8px var(--c-shadow);
+}
+
+.info-list-card,
+.top-contents-list {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: var(--c-back);
+  box-shadow: 0 4px 8px var(--c-shadow);
+}
+
+.grade {
+  text-align: center;
+}
+
+.grade-title {
+  margin: 0;
+}
+
+.grade-title img {
+  margin-right: 8px;
+}
+
+.gradesummary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.form .nolink td {
+  border-bottom: 0;
+}
+
+.statistics {
+  display: none;
+}
+
+.form td:not(.gradebar) {
+  background-color: var(--c-back-dark);
+}
+
+.gradebar {
+  background-color: var(--c-primary);
+  color: #fff;
+  text-align: center;
+}
+
+.groupthreadlist {
+  text-align: left;
+}
+
+.info-list tr {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.news-date {
+  margin-right: 8px;
+}
+
+.info-list-addbutton img {
+  display: none;
+}
+
+.info-list-addbutton a::before {
+  content: 'スレッドの新規作成';
+}
+
+.contents-card {
+  display: flex;
+  align-items: center;
+}
+
+.contents-card-img {
+  width: 32px;
+  height: 32px;
+  background-image: url("../icon_contents1.gif");
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.contents-card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.contents-card-title {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contents-card-title :last-child {
+  margin-right: 8px;
+}
+
+.ondemandhelp {
+  display: none;
+}
+
+.queryframe {
+  width: 100%;
+}
+
+.querystatus {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c-border);
+  height: 40px;
+  align-items: center;
+  position: sticky;
+  top: 56px;
+  background-color: var(--c-back);
+  z-index: 1;
+}
+
+.query_count_both {
+  width: 100%;
+}
+
+.textarea-char-counter,
+.textarea-word-counter {
+  display: inline-block;
+}
+
+.articlecomment {
+  display: none;
+}
+
+.articlecontainer {
+  border-radius: 16px;
+  border: 1px solid var(--c-border);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.articlenumber {
+  min-width: 24px;
+  height: 24px;
+  padding: 8px;
+  border-radius: 12px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-primary);
+  color: #fff;
+}
+
+.articleheader {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.articlebody-msgbody {
+  border-bottom: 1px solid var(--c-border);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.articletext h1 {
+  font-size: 1.5rem;
+}
+
+.parentmsg-no a::before {
+  content: '>>';
+}
+
+#commentform,
+#commentform_top,
+#commentform_bot {
+  display: none;
+  border-radius: 16px;
+  border: 1px solid var(--c-border);
+  padding: 16px;
+}
+
+.formtitle {
+  text-align: center;
+}
+
+.msg-info {
+  border-bottom: 1px solid var(--c-border);
+  margin-bottom: 8px;
+}
+
+.msg-subject {
+  font-size: 1.5rem;
+}
+
+.file-upload-button {
+  cursor: pointer;
+  border: none;
+  padding: 0 16px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--c-primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+}
+
+.file-upload-button::before {
+  content: 'ファイルを追加';
+}
+
+.form-input-file {
+  display: none;
+}
+
+#pagecomform {
+  display: none;
+}
+
+.report-form {
+  border-radius: 16px;
+  border: 1px solid var(--c-border);
+  padding: 16px;
+}
+
+.navigator {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.pager-change {
+  display: none;
+}
+
+.upload {
+  display: flex;
+  justify-content: center;
+}
+
+.upload > input {
+  margin: 4px;
+}
+
+.file-upload-button + [name=action_ReportStudent_submitdone] {
+  display: none;
+}
+
+.permutation,
+.permutation-response .vertical {
+  list-style: decimal;
+  padding-left: 32px;
+}
+
+.permutation-response-default {
+  display: none;
+}
+
+.permutation-response-field {
+  display: list-item;
+}
+
+.permutation-choice-header,
+.permutation-response-header {
+  font-weight: 700;
+  margin-top: 16px
+}
+
+.peoject-header {
+  width: 960px;
+  margin: 16px auto;
+  display: flex;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--c-back);
+  box-shadow: 0 4px 8px var(--c-shadow);
+}
+
+.user {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.userpage-top {
+  margin: 16px auto;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--c-back);
+  box-shadow: 0 4px 8px var(--c-shadow);
+  display: flex;
+  align-items: center;
+}
+
+.usericon {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  margin-right: 16px;
+}
+
+.articlebody {
+  margin: 16px auto;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--c-back);
+  box-shadow: 0 4px 8px var(--c-shadow);
+}

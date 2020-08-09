@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>popup</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <a id="reload_button" class="icon-button">
+      <img src="refresh-24px.svg" width="24" height="24">
+    </a>
+    <h1>設定</h1>
+    <a id="menu_button" class="icon-button">
+      <img src="more_vert-24px.svg" width="24" height="24">
+    </a>
+  </div>
+  <div class="body">
+    <label for="iframe_enabled" class="label">リンクをIframe化する</label>
+    <input type="checkbox" class="switch" id="iframe_enabled">
+    <label for="autosave_enabled" class="label">入力を自動保存する</label>
+    <input type="checkbox" class="switch" id="autosave_enabled">
+  </div>
+</body>
+<script src="../scripts/jquery-3.5.1.min.js"></script>
+<script src="popup.js"></script>
+</html>
