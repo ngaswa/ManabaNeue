@@ -60,6 +60,11 @@
   width: 100%;
 }
 
+.my-infolist-body td:first-child {
+  display: inline;
+  color: var(--c-text-sub);
+}
+
 .collist-courseinfo {
   font-weight: 700;
   margin-top: 16px;
@@ -150,8 +155,6 @@
 .courselistweekly-c > :first-child {
   display: block;
   width: 100%;
-  color: var(--c-text);
-  font-weight: 700;
   line-height: 1.5;
 }
 
@@ -261,6 +264,11 @@
 
 .eventlist-day {
   display: block;
+  color: var(--c-text-sub);
+}
+
+.center.eventlist-day {
+  text-align: center;
 }
 
 .event-title {

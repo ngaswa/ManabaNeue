@@ -19,6 +19,12 @@
   box-shadow: 0 4px 8px var(--c-shadow);
 }
 
+.info-list-card-header h2,
+.top-contents-list-header h2 {
+  font-weight: 400;
+  color: var(--c-text-sub);
+}
+
 .grade {
   text-align: center;
 }
@@ -67,6 +73,17 @@
 
 .news-date {
   margin-right: 8px;
+  color: var(--c-text-sub)
+}
+
+.info-list-addbutton a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--c-white);
+  padding: 0 16px;
+  height: 40px;
+  background-color: var(--c-primary);
+  border-radius: 4px;
 }
 
 .info-list-addbutton img {
@@ -102,6 +119,7 @@
 
 .contents-card-title :last-child {
   margin-right: 8px;
+  color: var(--c-text-sub);
 }
 
 .ondemandhelp {
@@ -126,6 +144,10 @@
 
 .query_count_both {
   width: 100%;
+}
+
+.query_required_marker {
+  color: var(--c-error);
 }
 
 .textarea-char-counter,
@@ -304,10 +326,19 @@
   margin-right: 16px;
 }
 
-.articlebody {
-  margin: 16px auto;
+.project-body {
+  display: grid;
+  grid-template-columns: 800px 360px;
+  grid-gap: 16px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.contentbody-left,
+.contentbody-right {
   padding: 16px;
+  box-shadow: 0 4px 8px var(--c-shadow);
   border-radius: 16px;
   background-color: var(--c-back);
-  box-shadow: 0 4px 8px var(--c-shadow);
 }
