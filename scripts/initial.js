@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $('body *').removeAttr('style');
   $('svg').remove();
   $('th').removeAttr('width');
+  $(':not(.nolink) > td').removeAttr('width');
   $('font').removeAttr('size');
   $('font').removeAttr('face');
   $('font').removeAttr('color');
