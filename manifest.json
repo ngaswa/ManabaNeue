@@ -9,6 +9,8 @@
         "https://*.manaba.jp/ct/*",
         "https://manaba.tsukuba.ac.jp/ct/*",
         "https://manaba.dokkyo.ac.jp/ct/*",
+        "https://manaba.rku.ac.jp/ct/*",
+        "https://manaba.apu.ac.jp/ct/*",
         "https://manaba.fun.ac.jp/ct/*"
       ],
       "css": [
@@ -25,6 +27,8 @@
         "https://*.manaba.jp/ct/home*",
         "https://manaba.tsukuba.ac.jp/ct/home*",
         "https://manaba.dokkyo.ac.jp/ct/home*",
+        "https://manaba.rku.ac.jp/ct/home*",
+        "https://manaba.apu.ac.jp/ct/home*",
         "https://manaba.fun.ac.jp/ct/home*"
       ],
       "css": [
@@ -36,6 +40,8 @@
         "https://*.manaba.jp/ct/course*",
         "https://manaba.tsukuba.ac.jp/ct/course*",
         "https://manaba.dokkyo.ac.jp/ct/course*",
+        "https://manaba.rku.ac.jp/ct/course*",
+        "https://manaba.apu.ac.jp/ct/course*",
         "https://manaba.fun.ac.jp/ct/course*"
       ],
       "js": [
@@ -50,6 +56,8 @@
         "https://*.manaba.jp/ct/page*",
         "https://manaba.tsukuba.ac.jp/ct/page*",
         "https://manaba.dokkyo.ac.jp/ct/page*",
+        "https://manaba.rku.ac.jp/ct/page*",
+        "https://manaba.apu.ac.jp/ct/page*",
         "https://manaba.fun.ac.jp/ct/page*"
       ],
       "js": [
@@ -64,6 +72,8 @@
         "https://*.manaba.jp/ct/course_*_survey_*_1p1",
         "https://manaba.tsukuba.ac.jp/ct/course_*_survey_*_1p1",
         "https://manaba.dokkyo.ac.jp/ct/course_*_survey_*_1p1",
+        "https://manaba.rku.ac.jp/ct/course_*_survey_*_1p1",
+        "https://manaba.apu.ac.jp/ct/course_*_survey_*_1p1",
         "https://manaba.fun.ac.jp/ct/course_*_survey_*_1p1"
       ],
       "js": [
@@ -75,6 +85,7 @@
     "16": "icons/16.png",
     "24": "icons/24.png",
     "32": "icons/32.png",
+    "48": "icons/48.png",
     "64": "icons/64.png"
   },
   "browser_action": {
@@ -82,6 +93,7 @@
       "16": "icons/16.png",
       "24": "icons/24.png",
       "32": "icons/32.png",
+      "48": "icons/48.png",
       "64": "icons/64.png"
   },
     "default_title": "Manaba Neue",
