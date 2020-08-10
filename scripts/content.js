@@ -1,7 +1,7 @@
-$(() => {
-  for (const styleSheet of document.styleSheets) {
+document.addEventListener('DOMContentLoaded', () => {
+  [...document.styleSheets].forEach(styleSheet => {
     styleSheet.disabled = true;
-  }
+  });
 
   $('body *').removeAttr('style');
   $('svg').remove();
@@ -13,4 +13,4 @@ $(() => {
   $('body :contains("\u00A0")').each((index, element) => {
     $(element).html($(element).html().replace(/&nbsp;/g, ''));
   });
-})
+});

@@ -20,7 +20,8 @@
         "scripts/jquery-3.5.1.min.js",
         "scripts/content.js",
         "scripts/disable-balloon.js"
-      ]
+      ],
+      "run_at": "document_start"
     },
     {
       "matches": [
