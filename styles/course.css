@@ -342,3 +342,26 @@
   border-radius: 16px;
   background-color: var(--c-back);
 }
+
+.button-switchview img {
+  display: none;
+}
+
+.button-switchview a {
+  display: none;
+  display: inline-flex;
+  padding: 0 16px;
+  height: 40px;
+  background-color: var(--c-primary);
+  color: var(--c-white);
+  border-radius: 4px;
+  align-items: center;
+}
+
+.button-switchview a[href*='flat']::before {
+  content: '更新順にする';
+}
+
+.button-switchview a[href*='tree']::before {
+  content: 'ツリー表示にする';
+}

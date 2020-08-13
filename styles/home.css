@@ -60,21 +60,6 @@
   width: 100%;
 }
 
-.my-infolist-body td:first-child {
-  display: inline;
-  color: var(--c-text-sub);
-}
-
-.collist-courseinfo {
-  font-weight: 700;
-  margin-top: 16px;
-}
-
-.collyear-open {
-  color: var(--c-primary);
-  cursor: pointer;
-}
-
 #gradesubmitconfirm,
 #gradeeditconfirm {
   display: none;
@@ -162,6 +147,7 @@
 
 .current {
   border-bottom: 2px solid var(--c-primary);
+  font-weight: 700;
 }
 
 .course {
@@ -213,21 +199,6 @@
 .course-card-status {
   display: flex;
   height: 15px;
-}
-
-.collist-year {
-  position: relative;
-  border-bottom: 1px solid var(--c-border);
-  position: sticky;
-  top: 56px;
-  background-color: var(--c-back);
-  padding-top: 8px;
-}
-
-.collyear-open {
-  position: absolute;
-  right: 0;
-  top: 8px;
 }
 
 .coursecard {
@@ -309,4 +280,36 @@
 
 .event-title a:last-child {
   grid-column: 2;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+/*         COURSETABLE        */
+/*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
+.collist-courseinfo {
+  font-weight: 700;
+  margin-top: 16px;
+  font-size: 1.25rem;
+}
+
+.collldatalist {
+  width: 100%;
+}
+
+.collist-year {
+  position: relative;
+  border-bottom: 1px solid var(--c-border);
+  position: sticky;
+  top: 56px;
+  background-color: var(--c-back);
+  padding-top: 8px;
+}
+
+.collyear-open {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  color: var(--c-primary);
+  cursor: pointer;
 }

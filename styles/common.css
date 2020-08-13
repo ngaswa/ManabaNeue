@@ -6,7 +6,7 @@
   --c-primary-light: #5edb9c;
   --c-primary-dark: #277c5c;
 
-  --c-success: #31d488;
+  --c-success: #05b98c;
   --c-error: #ff5144;
   --c-warning: #ffda35;
 
@@ -15,8 +15,8 @@
   --c-gray-80: #30363f;
   --c-gray-70: #657388;
   --c-gray-30: #8c9aac;
-  --c-gray-20: #a7aab6;
-  --c-gray-10: #c5cfdb;
+  --c-gray-20: #c0cbd8;
+  --c-gray-10: #e7ecf1;
   --c-gray-05: #f5f7fa;
   --c-white: #fff;
 
@@ -27,14 +27,14 @@
   --c-link: var(--c-gray-70);
   --c-back: var(--c-white);
   --c-back-dark: var(--c-gray-05);
-  --c-input-border: var(--c-gray-10);
-  --c-border: var(--c-gray-05);
+  --c-input-border: var(--c-gray-20);
+  --c-border: var(--c-gray-10);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --c-header: #23262ccc;
-    --c-shadow: #0a0f146b;
+    --c-header: #2d303acc;
+    --c-shadow: #23262c6b;
     --c-text: var(--c-white);
     --c-text-sub: var(--c-gray-70);
     --c-link: var(--c-gray-05);
@@ -148,6 +148,7 @@ img {
 
 table {
   border-spacing: 0;
+  width: 100%;
 }
 
 button,
@@ -168,7 +169,8 @@ audio {
   width: 100%;
 }
 
-p:empty {
+p:empty,
+td:empty {
   display: none;
 }
 
@@ -226,8 +228,8 @@ th {
   min-width: 16px;
   height: 16px;
   border-radius: 8px;
-  background-color: var(--c-white);
-  color: var(--c-error);
+  background-color: var(--c-error);
+  color: var(--c-white);
   display: inline-flex;
   place-items: center;
   font-weight: 700;
@@ -236,7 +238,6 @@ th {
 
 .stdlist {
   margin-bottom: 16px;
-  width: 100%;
 }
 
 .stdlist .title th {
@@ -320,7 +321,29 @@ th {
 }
 
 .help-box {
-  color: red;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-primary);
+  cursor: pointer;
+}
+
+.help-box::before {
+  color: var(--c-white);
+  content: '?';
+}
+
+.help-box-panel {
+  display: none;
+  position: absolute;
+  background-color: var(--c-back);
+  box-shadow: 0 8px 8px var(--c-shadow);
+  padding: 16px;
+  border-radius: 16px;
+  width: 320px;
 }
 
 .memo {
@@ -363,10 +386,17 @@ th {
   background: url(/header-school.gif);
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 0 16px;
+  margin: 0;
   width: 200px;
   height: 48px;
   order: -2;
+}
+
+@media (prefers-color-scheme: dark) {
+  #orgheader {
+    mix-blend-mode: screen;
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
 
 #myheader {
@@ -423,6 +453,8 @@ th {
 
 #mynavi {
   order: -1;
+  margin-left: -200px;
+  margin-bottom: -8px;
 }
 
 #mynavi img {
@@ -439,8 +471,8 @@ th {
   box-shadow: 0 -4px 0 var(--c-primary);
 }
 
-.mynavi-button-home a::before {
-  content: 'ホーム';
+.mynavi-button-home a {
+  width: 200px;
 }
 
 .mynavi-button-course a::before {
@@ -458,6 +490,28 @@ th {
   margin: 0 16px;
 }
 
+#screenname {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 8px 12px;
+  cursor: pointer;
+  background-color: var(--c-black);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+#screenname:hover {
+  opacity: 0.2;
+}
+
+#screenname a {
+  opacity: 0;
+}
+
 #userballoon_loading_skelton {
   display: none;
 }
@@ -468,11 +522,28 @@ th {
   border-radius: 8px;
   z-index: 1;
   background-color: var(--c-back);
+  right: 16px !important;
+  left: auto !important;
+  top: 64px !important;
+  position: fixed !important;
 }
 
 .baloonclose img {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+}
+
+.userballooncontent th {
   display: block;
-  margin-left: auto;
+  width: 64px !important;
+}
+
+.userballooncontent img[src*="profileimage"] {
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 32px;
+  border: none !important;
 }
 
 /*_/_/_/_/_/_/_/_/_/_/_/_/_/_/*/
@@ -637,7 +708,10 @@ th {
   font-weight: 700;
   display: flex;
   justify-content: center;
-  padding-top: 32px;
+  height: 48px;
+  align-items: center;
+  color: var(--c-white);
+  background-color: var(--c-error);
 }
 
 .login {
@@ -670,7 +744,8 @@ th {
 
 #login-image03 img {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
