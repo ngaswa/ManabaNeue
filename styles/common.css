@@ -67,7 +67,7 @@ body {
   margin: 0;
   min-height: 100vh;
   scroll-behavior: smooth;
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", "BIZ UDGothic", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Segoe UI', 'BIZ UDGothic', sans-serif;
   letter-spacing: 0.05em;
   line-height: 1.75;
   color: var(--c-text);
@@ -539,7 +539,7 @@ th {
   width: 64px !important;
 }
 
-.userballooncontent img[src*="profileimage"] {
+.userballooncontent img[src*='profileimage'] {
   width: 64px !important;
   height: 64px !important;
   border-radius: 32px;
